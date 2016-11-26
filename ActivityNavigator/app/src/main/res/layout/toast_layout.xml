@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kishore.activitynavigator.ToastPlay">
+
+    <Button
+        android:text="T.Left"
+        android:onClick="topLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnTL" />
+
+    <Button
+        android:text="T.Center"
+        android:onClick="topCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnTL"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnTC" />
+
+    <Button
+        android:text="T.Right"
+        android:onClick="topRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnTR" />
+
+    <Button
+        android:text="M.Left"
+        android:onClick="midLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnML" />
+
+    <Button
+        android:text="M.Center"
+        android:onClick="midCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnML"
+        android:layout_alignRight="@+id/btnTC"
+        android:layout_alignEnd="@+id/btnTC"
+        android:id="@+id/btnMC" />
+
+    <Button
+        android:text="M.Right"
+        android:onClick="midRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnMC"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnMR" />
+
+    <Button
+        android:text="B.Left"
+        android:onClick="bottomLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnBL" />
+
+    <Button
+        android:text="B.Center"
+        android:onClick="bottomCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnMC"
+        android:layout_alignEnd="@+id/btnMC"
+        android:id="@+id/btnBC" />
+
+    <Button
+        android:text="B.Right"
+        android:onClick="bottomRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnBC"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnBR" />
+
+</RelativeLayout>

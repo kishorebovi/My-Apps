@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textSize="35dp"
+        android:ems="10"
+        android:id="@+id/etFirstName"
+        android:hint="Enter First Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textSize="35dp"
+        android:ems="10"
+        android:id="@+id/etLastName"
+        android:hint="Enter Last Name"/>
+
+    <Button
+        android:text="Hit Me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGreet"
+        android:textSize="20dp"
+        android:onClick="greetUser"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Greeting Will Be Displayed Here..."
+        android:ems="10"
+        android:id="@+id/tvResult" />
+</LinearLayout>
